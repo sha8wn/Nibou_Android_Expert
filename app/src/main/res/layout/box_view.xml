@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_20"
+            android:background="@drawable/transparent_background">
+
+        <TextView
+                android:id="@+id/box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:gravity="start"
+                android:hint="@string/please_select"
+                android:padding="@dimen/dim_15"
+                android:textAlignment="viewStart"
+                android:textColor="@color/screen_title_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/txt_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+                android:id="@+id/cross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/dim_15"
+                android:src="@drawable/close" />
+    </RelativeLayout>
+
+</RelativeLayout>

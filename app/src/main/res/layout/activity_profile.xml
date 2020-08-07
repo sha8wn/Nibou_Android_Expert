@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dashboard_back"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+        <include
+                android:id="@+id/toolbar"
+                layout="@layout/my_toolbar"/>
+
+        <TextView
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_10"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/txt_24"
+                android:fontFamily="@font/ubuntu_b"
+                android:layout_below="@+id/toolbar"
+                android:text="@string/profile_txt"
+                android:textColor="@color/screen_title_color"/>
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/profile"
+                android:layout_above="@+id/save"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:layout_marginRight="@dimen/dim_20"
+                    android:orientation="vertical"
+                    tools:layout_editor_absoluteX="20dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/userImageView"
+                        android:layout_width="@dimen/dim_120"
+                        android:layout_height="@dimen/dim_120"
+                        android:layout_gravity="center"
+                        android:src="@drawable/default_placeholder"/>
+
+
+                <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/transparent_background"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:hint="@string/full_name"
+                        android:textSize="@dimen/txt_14"
+                        android:inputType="textPersonName"
+                        android:imeOptions="actionNext"
+                        android:padding="@dimen/dim_15"
+                        android:textDirection="locale"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/screen_title_color"
+                        android:textColorHint="@color/hint_color"/>
+
+                <EditText
+                        android:id="@+id/mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:background="@drawable/transparent_background"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:hint="@string/email"
+                        android:padding="@dimen/dim_15"
+                        android:focusable="false"
+                        android:textDirection="locale"
+                        android:textAlignment="viewStart"
+                        android:enabled="false"
+                        android:textSize="@dimen/txt_14"
+                        android:textColor="@color/disable_grey"
+                        android:textColorHint="@color/disable_grey"/>
+
+                <EditText
+                        android:id="@+id/country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:background="@drawable/transparent_background"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:hint="@string/country"
+                        android:focusable="false"
+                        android:textDirection="locale"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/txt_14"
+                        android:padding="@dimen/dim_15"
+                        android:textColor="@color/screen_title_color"
+                        android:textColorHint="@color/hint_color"/>
+
+                <EditText
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/txt_14"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:background="@drawable/transparent_background"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:inputType="textPersonName"
+                        android:imeOptions="actionDone"
+                        android:textDirection="locale"
+                        android:textAlignment="viewStart"
+                        android:hint="@string/city"
+                        android:padding="@dimen/dim_15"
+                        android:textColor="@color/screen_title_color"
+                        android:textColorHint="@color/hint_color"/>
+
+                <Button
+                        android:id="@+id/upload_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_20"
+                        android:background="@drawable/transparent_background"
+                        android:fontFamily="@font/ubuntu_b"
+                        android:gravity="center"
+                        android:padding="@dimen/dim_10"
+                        android:text="@string/view_profile"
+                        android:textColor="@color/screen_title_color"
+                        android:visibility="gone"/>
+
+                <Button
+                        android:id="@+id/view_profile"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:textAllCaps="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_20"
+                        android:background="@drawable/transparent_background"
+                        android:fontFamily="@font/ubuntu_b"
+                        android:gravity="center"
+                        android:padding="@dimen/dim_10"
+                        android:text="@string/view_profile"
+                        android:textColor="@color/screen_title_color"/>
+
+                <TextView
+                        android:id="@+id/delete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_5"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/ubuntu_b"
+                        android:gravity="center"
+                        android:padding="@dimen/dim_10"
+                        android:textSize="14sp"
+                        android:text="@string/delete"
+                        android:textColor="@color/screen_title_color"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:fontFamily="@font/ubuntu_b"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/save"
+                android:textAlignment="center"
+                android:layout_alignParentBottom="true"
+                android:textAllCaps="true"
+                android:textColor="@color/screen_title_color"
+                android:textSize="16sp"/>
+    </RelativeLayout>
+</layout>

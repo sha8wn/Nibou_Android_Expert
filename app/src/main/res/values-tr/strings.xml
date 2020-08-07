@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Danışman</string>
+    <string name="fcm_channel_id">Nibou</string>
+    <!--Expert Login Language-->
+    <string name="choose_language">Dilinizi seçin</string>
+    <string name="english">İngilizce</string>
+    <string name="arabic">Arapça</string>
+    <string name="turkish">Türkçe</string>
+    <string name="doller">$</string>
+    <string name="aed">AED</string>
+    <string name="tl">₺</string>
+    <string name="minutes">Dak</string>
+    <string name="minutes_full">Dakikalar</string>
+    <string name="paid">Ödendi</string>
+    <string name="unpaid">Ödenmedi</string>
+    <string name="cancelled">İptal</string>
+    <string name="date">Tarih: </string>
+    <string name="time">Saat: </string>
+    <string name="room">Oda: </string>
+    <string name="txn_id">İşlem kimliği: </string>
+    <string name="customer">Müşteri adı: </string>
+    <string name="earned">Kazanılan: </string>
+    <!-- Strings related to login -->
+    <string name="email">E-Posta</string>
+    <string name="city">Şehir</string>
+    <string name="login">Giriş</string>
+    <string name="sign_up">Kaydol</string>
+    <string name="full_name">Ad Soyad</string>
+    <string name="country">Ülke</string>
+    <string name="password">Şifre</string>
+    <string name="forgot_password">Parolanızı mı unuttunuz?</string>
+    <!--reset expert password-->
+    <string name="enter_email">Şifre sıfırlama yönergeleri için e-posta adresinizi girin</string>
+    <string name="reset_pwd">Şifremi sıfırla</string>
+    <string name="success">Başarı</string>
+    <string name="reset_link">Geçerli bir E-Posta adresi girdiyseniz, şifrenizi sıfırlamak için gerekli olan yönergeleri içeren bir E-Posta alacaksınız.</string>
+    <!-- nibou chat-->
+    <string name="nibou_chat">Nibou sohbet</string>
+    <string name="message">Mesaj</string>
+    <string name="OK">TAMAM</string>
+    <string name="CANCEL">İPTAL</string>
+    <string name="sign_up_success_message">Nibou’ya başarı ile kaydoldunuz. Daha mutlu bir hayata bir adım daha yaklaştınız.</string>
+    <string name="image">Görüntü</string>
+    <string name="yesterday">Dün</string>
+    <!-- menu -->
+    <string name="profile">Profili güncelle</string>
+    <string name="bio">Kısa özgeçmiş</string>
+    <string name="change_pwd">Şifrenizi değistirin</string>
+    <string name="manage_timing">Uygun saatler</string>
+    <string name="expertise">Uzmanlık</string>
+    <string name="language">Dil</string>
+    <string name="feedback">Geri bildirim</string>
+    <string name="settings">Ayarlar</string>
+    <string name="dashboard">Kontrol paneli</string>
+    <string name="reviews">Yorumlar</string>
+    <string name="join_txt">Katıldı</string>
+    <string name="view_rating">Kazanç geçmişini görüntüle</string>
+    <string name="view_review">Yorumları ve değerlendirmeleri görüntüle</string>
+    <!--profile string-->
+    <string name="profile_txt">Profil</string>
+    <string name="view_profile">Mevcut PDF Profilini Görüntüle</string>
+    <string name="upload_profile">Yeni PDF Profili Yükle</string>
+    <string name="delete">Sil</string>
+    <string name="save">Kaydet</string>
+    <!--short bio-->
+    <string name="write_about">Nibou Profiliniz için birkaç cümle ile kendinizi anlatın. Daha sonra isterseniz, değiştirebilirsiniz</string>
+    <string name="please_write">Lütfen buraya yazın...</string>
+    <string name="specialization">Uzmanlık</string>
+    <!--timings-->
+    <string name="timings">Uygun saatler</string>
+    <string name="monday">Pazartesi</string>
+    <string name="tuesday">Salı</string>
+    <string name="wednesday">Çarşamba</string>
+    <string name="thursday">Perşembe</string>
+    <string name="friday">Cuma</string>
+    <string name="saturday">Cumartesi</string>
+    <string name="sunday">Pazar</string>
+    <!--specialization-->
+    <string name="add">Başka bir tane ekle</string>
+    <string name="total">Toplam</string>
+    <string name="this_month">Bu ay</string>
+    <!--feedback-->
+    <string name="subject">Konu</string>
+    <string name="add_review">Yorum Ekle</string>
+    <string name="earning">Kazanç</string>
+    <string name="write_here">Buraya yazın</string>
+    <string name="highlight">Vurgula</string>
+    <string name="highlight_txt">Bu sohbetteki önemli noktaları vurgula</string>
+    <string name="logout">Çıkış Yap</string>
+    <string name="logout_txt">Çıkmak istediğinize emin misiniz?</string>
+    <!--Change password screen-->
+    <string name="reset_password">Şifrenizi yenileyin</string>
+    <string name="current_password">Şimdiki Şifre</string>
+    <string name="new_password">Yeni şifre</string>
+    <string name="repeat_new">Yeni şifreyi tekrar girin</string>
+    <string name="depression">Depresyon</string>
+    <string name="currentpwd_empty_alert">Lütfen mevcut şifreyi girin</string>
+    <string name="newpwd_empty_alert">Lütfen yeni şifrenizi giriniz.</string>
+    <string name="repeatpwd_empty_alert">Lütfen tekrarlanan şifreyi girin</string>
+    <string name="pwd_length_alert">Şifreniz en az 6 rakamdan oluşmalıdır.</string>
+    <string name="pwd_mismatch_alert">Tekrarlanan şifre eşleşmedi</string>
+    <string name="pwd_change_success_alert">Şifreniz başarıyla değiştirildi</string>
+    <string name="pwd_change_failed_alert">Mevcut şifrenizi yanlış girdiniz</string>
+    <string name="name_empty_alert">Lütfen adınızı ve soyadınızı girin</string>
+    <string name="alias_empty_alert">Lütfen kullanıcı adınızı girin</string>
+    <string name="email_empty_alert">Lütfen E-Posta adresinizi girin</string>
+    <string name="email_invalid_alert">Geçersiz E-Posta</string>
+    <string name="password_empty_alert">Lütfen şifrenizi girin</string>
+    <string name="country_empty_alert">Lütfen ülke adını girin</string>
+    <string name="city_empty_alert">Lütfen şehir adını girin.</string>
+    <string name="bio_empty_alert">Lütfen kısaca kendinizi tanıtın.</string>
+    <string name="bio_success_alert">Kısa biyografiniz güncellendi</string>
+    <string name="pdf_profile_delete_alert">Pdf profiliniz başarıyla silindi</string>
+    <string name="pdf_attached_alert">Pdf başarıyla seçildi</string>
+    <string name="profile_success_alert">Profil başarıyla güncellendi</string>
+    <!--general alert-->
+    <string name="please_select">Lütfen seçiniz.</string>
+    <string name="please_fill_previous">Lütfen önce üsttekileri doldurun</string>
+    <string name="please_select_timing">Lütfen doğru zamanlamayı seçin</string>
+    <string name="timing_delete_alert">%1$s öğesini programınızdan kaldırmak istediğinizden emin misiniz?</string>
+    <string name="timing_success_alert">Zamanlama başarıyla güncellendi</string>
+    <string name="timing_delete_success_alert">Zamanlama başarıyla kaldırıldı</string>
+    <string name="authorization_failed">Yetkilendirme Başarısız</string>
+    <string name="timeout">Zaman aşımı, Lütfen tekrar deneyin</string>
+    <string name="server_faliure">Sunucu cevap vermiyor</string>
+    <string name="wrong_with_backend">Bir şeyler yanlış gitti. Lütfen tekrar deneyin</string>
+    <string name="refresh_token_error_alert">Bir şeyler yanlış gitti. Lütfen tekrar giriş yapın</string>
+    <string name="internet_error">İnternet bağlantısı koptu</string>
+    <string name="error">HATA</string>
+    <string name="alert">Uyarı</string>
+    <string name="error_message">Yanlış kullanıcı adı ya da şifre.</string>
+    <string name="already_registered_message">E-posta Kimliği zaten başka bir hesaba kayıtlı</string>
+    <string name="forgot_password_error_alert">Bu hesap henüz oluşturulmadı</string>
+    <string name="delete_message_alert">Bu pdf’i silmek mi istiyorsunuz?</string>
+    <string name="press_back_message">Çıkmak için lütfen geri tuşuna tekrar basın.</string>
+    <string name="bookmarked_success_alert">Yer işareti başarıyla eklendi</string>
+    <string name="bookmarked_selection_alert">Lütfen önce vurgulayın.</string>
+    <string name="langauges_success_alert">Dil başarıyla kaydedildi</string>
+    <string name="langauges_delete_alert">Dil başarıyla silindi</string>
+    <string name="experties_success_alert">Uzmanlık başarıyla kaydedildi</string>
+    <string name="experties_delete_alert">Uzmanlık başarıyla silindi</string>
+    <string name="feedback_success_alert">Geri bildirim başarıyla iletildi</string>
+    <string name="feedback_empty_alert">Lütfen geri bildirim iletinizi girin.</string>
+    <string name="subject_empty_alert">Lütfen konuyu giriniz.</string>
+    <!--notification alert-->
+    <string name="notifications">Bildirimler</string>
+    <string name="group">Grup</string>
+    <string name="delay_response">Gecikmiş cevap</string>
+    <string name="delay_alert_message">Bir Nibou Müşterisine son %1$s dakika içinde cevap verilmedi.</string>
+    <string name="session_ended_alert">Sohbet Oturumu Sonu</string>
+</resources>

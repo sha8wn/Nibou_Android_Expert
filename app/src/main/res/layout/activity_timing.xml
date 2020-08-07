@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dashboard_back"
+            tools:context=".fragments.SettingFragment">
+
+        <include
+                android:id="@+id/toolbar"
+                layout="@layout/my_toolbar"/>
+
+        <TextView
+                android:id="@+id/timing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_20"
+                android:textSize="@dimen/txt_24"
+                android:fontFamily="@font/ubuntu_b"
+                android:text="@string/timings"
+                android:textColor="@color/screen_title_color"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+
+
+        <RelativeLayout
+                android:id="@+id/monday_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_20"
+                app:layout_constraintTop_toBottomOf="@+id/timing"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                    android:id="@+id/monday"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:textColor="@color/timing_screen_deselect"
+                    android:textSize="@dimen/txt_16"
+                    android:padding="@dimen/dim_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/monday"/>
+
+            <TextView
+                    android:id="@+id/start_time_mon"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:textColor="@color/screen_title_color"
+                    android:padding="@dimen/dim_5"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dim_20"
+                    android:layout_toLeftOf="@+id/end_time_mon"
+                    android:text="00:00"/>
+
+            <TextView
+                    android:id="@+id/end_time_mon"
+                    android:padding="@dimen/dim_5"
+                    android:visibility="invisible"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:textColor="@color/screen_title_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="00:00"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:id="@+id/tuesday_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/dim_20"
+                app:layout_constraintTop_toBottomOf="@+id/monday_rel"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                    android:id="@+id/tuesday"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:textColor="@color/timing_screen_deselect"
+                    android:textSize="@dimen/txt_16"
+                    android:padding="@dimen/dim_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/tuesday"/>
+
+            <TextView
+                    android:id="@+id/start_time_tue"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:visibility="invisible"
+                    android:textColor="@color/screen_title_color"
+                    android:padding="@dimen/dim_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dim_20"
+                    android:layout_toLeftOf="@+id/end_time_tue"
+                    android:text="00:00"/>
+
+            <TextView
+                    android:id="@+id/end_time_tue"
+                    android:padding="@dimen/dim_5"
+                    android:visibility="invisible"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:textColor="@color/screen_title_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="00:00"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/wednesday_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/dim_20"
+                app:layout_constraintTop_toBottomOf="@+id/tuesday_rel"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                    android:id="@+id/wednesday"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:textColor="@color/timing_screen_deselect"
+                    android:textSize="@dimen/txt_16"
+                    android:padding="@dimen/dim_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/wednesday"/>
+
+            <TextView
+                    android:id="@+id/start_time_wed"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:textColor="@color/screen_title_color"
+                    android:padding="@dimen/dim_5"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dim_20"
+                    android:layout_toLeftOf="@+id/end_time_wed"
+                    android:text="00:00"/>
+
+            <TextView
+                    android:id="@+id/end_time_wed"
+                    android:padding="@dimen/dim_5"
+                    android:visibility="invisible"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:textColor="@color/screen_title_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="00:00"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/thursday_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/dim_20"
+                app:layout_constraintTop_toBottomOf="@+id/wednesday_rel"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                    android:id="@+id/thursday"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:textColor="@color/timing_screen_deselect"
+                    android:textSize="@dimen/txt_16"
+                    android:padding="@dimen/dim_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/thursday"/>
+
+            <TextView
+                    android:id="@+id/start_time_thur"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:textColor="@color/screen_title_color"
+                    android:padding="@dimen/dim_5"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dim_20"
+                    android:layout_toLeftOf="@+id/end_time_thur"
+                    android:text="00:00"/>
+
+            <TextView
+                    android:id="@+id/end_time_thur"
+                    android:padding="@dimen/dim_5"
+                    android:visibility="invisible"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:textColor="@color/screen_title_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="00:00"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/friday_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/dim_20"
+                app:layout_constraintTop_toBottomOf="@+id/thursday_rel"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                    android:id="@+id/friday"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:textColor="@color/timing_screen_deselect"
+                    android:textSize="@dimen/txt_16"
+                    android:padding="@dimen/dim_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/friday"/>
+
+            <TextView
+                    android:id="@+id/start_time_fri"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:textColor="@color/screen_title_color"
+                    android:padding="@dimen/dim_5"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dim_20"
+                    android:layout_toLeftOf="@+id/end_time_fri"
+                    android:text="00:00"/>
+
+            <TextView
+                    android:id="@+id/end_time_fri"
+                    android:padding="@dimen/dim_5"
+                    android:visibility="invisible"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:textColor="@color/screen_title_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="00:00"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/saturday_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/dim_20"
+                app:layout_constraintTop_toBottomOf="@+id/friday_rel"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                    android:id="@+id/saturday"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:textColor="@color/timing_screen_deselect"
+                    android:textSize="@dimen/txt_16"
+                    android:padding="@dimen/dim_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/saturday"/>
+
+            <TextView
+                    android:id="@+id/start_time_sat"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:textColor="@color/screen_title_color"
+                    android:padding="@dimen/dim_5"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dim_20"
+                    android:layout_toLeftOf="@+id/end_time_sat"
+                    android:text="00:00"/>
+
+            <TextView
+                    android:id="@+id/end_time_sat"
+                    android:padding="@dimen/dim_5"
+                    android:visibility="invisible"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:textColor="@color/screen_title_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="00:00"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/sunday_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/dim_20"
+                app:layout_constraintTop_toBottomOf="@+id/saturday_rel"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                    android:id="@+id/sunday"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:textColor="@color/timing_screen_deselect"
+                    android:textSize="@dimen/txt_16"
+                    android:padding="@dimen/dim_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/sunday"/>
+
+            <TextView
+                    android:id="@+id/start_time_sun"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:textColor="@color/screen_title_color"
+                    android:padding="@dimen/dim_5"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dim_20"
+                    android:layout_toLeftOf="@+id/end_time_sun"
+                    android:text="00:00"/>
+
+            <TextView
+                    android:id="@+id/end_time_sun"
+                    android:padding="@dimen/dim_5"
+                    android:visibility="invisible"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:textColor="@color/screen_title_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="00:00"/>
+        </RelativeLayout>
+
+
+        <TextView
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textAllCaps="false"
+                android:visibility="invisible"
+                android:layout_marginStart="@dimen/dim_20"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_20"
+                android:layout_marginEnd="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20"
+                android:fontFamily="@font/ubuntu_b"
+                android:text="@string/save"
+                android:textColor="@color/screen_title_color"
+                android:textSize="@dimen/txt_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sunday_rel"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

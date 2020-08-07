@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  tools:context=".fragments.SettingFragment">
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_40">
+
+            <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:text="@string/settings"
+                    android:textColor="@color/star_color"
+                    android:textSize="@dimen/txt_24"/>
+
+
+            <ImageView
+                    android:id="@+id/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dim_10"
+                    android:src="@drawable/menu_logout"/>
+
+
+        </RelativeLayout>
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:layout_marginBottom="@dimen/dim_10"
+                    android:layout_marginRight="@dimen/dim_20"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:id="@+id/profile_img"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dim_10"
+                            android:src="@drawable/menu_profile"/>
+
+                    <TextView
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:textAllCaps="false"
+                            android:gravity="start"
+                            android:id="@+id/update_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@+id/profile_img"
+                            android:fontFamily="@font/ubuntu_m"
+                            android:padding="@dimen/dim_10"
+                            android:text="@string/profile"
+                            android:textColor="@color/star_color"
+                            android:textSize="@dimen/txt_16"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_10">
+
+                    <ImageView
+                            android:id="@+id/bio_img"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dim_10"
+                            android:src="@drawable/menu_bio"/>
+
+                    <TextView
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:textAllCaps="false"
+                            android:gravity="start"
+                            android:id="@+id/bio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@+id/bio_img"
+                            android:fontFamily="@font/ubuntu_m"
+                            android:padding="@dimen/dim_10"
+                            android:text="@string/bio"
+                            android:textColor="@color/star_color"
+                            android:textSize="@dimen/txt_16"/>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_10">
+
+                    <ImageView
+                            android:id="@+id/pwd_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:padding="@dimen/dim_10"
+                            android:src="@drawable/menu_password"/>
+
+                    <TextView
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:textAllCaps="false"
+                            android:gravity="start"
+                            android:id="@+id/change_pwd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/pwd_img"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/ubuntu_m"
+                            android:padding="@dimen/dim_10"
+                            android:text="@string/change_pwd"
+                            android:textColor="@color/star_color"
+                            android:textSize="@dimen/txt_16"/>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_10">
+
+                    <ImageView
+                            android:id="@+id/timing_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dim_10"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/menu_timesicon"/>
+
+                    <TextView
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:textAllCaps="false"
+                            android:gravity="start"
+                            android:id="@+id/timing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@+id/timing_img"
+                            android:fontFamily="@font/ubuntu_m"
+                            android:padding="@dimen/dim_10"
+                            android:text="@string/manage_timing"
+                            android:textColor="@color/star_color"
+                            android:textSize="@dimen/txt_16"/>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_10">
+
+                    <ImageView
+                            android:id="@+id/special_img"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dim_10"
+                            android:src="@drawable/menu_bookmark"/>
+
+                    <TextView
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:textAllCaps="false"
+                            android:gravity="start"
+                            android:id="@+id/specialization"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@+id/special_img"
+                            android:fontFamily="@font/ubuntu_m"
+                            android:padding="@dimen/dim_10"
+                            android:text="@string/expertise"
+                            android:textColor="@color/star_color"
+                            android:textSize="@dimen/txt_16"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/lang_option"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_10">
+
+                    <ImageView
+                            android:id="@+id/language_img"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dim_10"
+                            android:src="@drawable/menu_language"/>
+
+                    <TextView
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:textAllCaps="false"
+                            android:gravity="start"
+                            android:id="@+id/langauge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@+id/language_img"
+                            android:fontFamily="@font/ubuntu_m"
+                            android:padding="@dimen/dim_10"
+                            android:text="@string/language"
+                            android:textColor="@color/star_color"
+                            android:textSize="@dimen/txt_16"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_10">
+
+                    <ImageView
+                            android:id="@+id/feedbck_img"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dim_10"
+                            android:src="@drawable/menu_feedback"/>
+
+                    <TextView
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:textAllCaps="false"
+                            android:gravity="start"
+                            android:id="@+id/feedback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@+id/feedbck_img"
+                            android:fontFamily="@font/ubuntu_m"
+                            android:padding="@dimen/dim_10"
+                            android:text="@string/feedback"
+                            android:textColor="@color/star_color"
+                            android:textSize="@dimen/txt_16"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

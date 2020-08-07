@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@color/dashboard_back">
+
+        <include
+                android:id="@+id/toolbar"
+                layout="@layout/my_toolbar"/>
+
+        <TextView
+                android:id="@+id/specialization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_10"
+                android:textSize="@dimen/txt_24"
+                android:fontFamily="@font/ubuntu_b"
+                android:text="@string/expertise"
+                android:textColor="@color/screen_title_color"
+                android:layout_below="@+id/toolbar"/>
+
+        <ScrollView
+                android:id="@+id/main_view"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="@dimen/dim_30"
+                android:layout_below="@+id/specialization"
+                android:layout_height="match_parent">
+
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:id="@+id/skill_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim_20"
+                        android:layout_marginRight="@dimen/dim_20"
+                        android:background="@drawable/transparent_background"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:gravity="start"
+                        android:padding="@dimen/dim_15"
+                        android:textSize="@dimen/txt_14"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/screen_title_color"
+                        android:textColorHint="@color/hint_color"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+
+                <LinearLayout
+                        android:id="@+id/addExpertiseLl"
+                        android:layout_marginLeft="@dimen/dim_20"
+                        android:layout_marginRight="@dimen/dim_20"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/skill_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                </LinearLayout>
+
+
+                <TextView
+                        android:id="@+id/save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:textAllCaps="false"
+                        android:visibility="visible"
+                        android:layout_marginStart="@dimen/dim_20"
+                        android:layout_marginLeft="@dimen/dim_20"
+                        android:layout_marginTop="@dimen/dim_20"
+                        android:layout_marginEnd="@dimen/dim_20"
+                        android:layout_marginRight="@dimen/dim_20"
+                        android:fontFamily="@font/ubuntu_b"
+                        android:text="@string/save"
+                        android:textColor="@color/screen_title_color"
+                        android:textSize="@dimen/txt_14"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/addExpertiseLl"/>
+
+                <TextView
+                        android:id="@+id/delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:textAllCaps="false"
+                        android:visibility="visible"
+                        android:layout_marginStart="@dimen/dim_20"
+                        android:layout_marginLeft="@dimen/dim_20"
+                        android:layout_marginTop="@dimen/dim_20"
+                        android:layout_marginEnd="@dimen/dim_20"
+                        android:layout_marginRight="@dimen/dim_20"
+                        android:fontFamily="@font/ubuntu_b"
+                        android:text="@string/delete"
+                        android:textColor="@color/screen_title_color"
+                        android:textSize="@dimen/txt_14"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/addExpertiseLl"/>
+
+                <TextView
+                        android:id="@+id/add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_marginStart="@dimen/dim_20"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:layout_marginEnd="@dimen/dim_20"
+                        android:fontFamily="@font/ubuntu_b"
+                        android:textSize="16sp"
+                        android:text="@string/add"
+                        android:textAllCaps="true"
+                        android:textColor="@color/screen_title_color"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/delete"/>
+
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

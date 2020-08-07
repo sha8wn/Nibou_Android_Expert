@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="@dimen/dim_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+    <TextView
+            android:id="@+id/item"
+            android:fontFamily="@font/ubuntu_m"
+            android:layout_marginBottom="@dimen/dim_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/dim_10"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/txt_14"
+            android:textColor="@color/screen_title_color"
+            app:layout_constraintLeft_toLeftOf="parent">
+    </TextView>
+
+
+</android.support.constraint.ConstraintLayout>

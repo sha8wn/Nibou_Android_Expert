@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/chat"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/message_icon"
+        android:title="" />
+
+    <item
+        android:id="@+id/dashboard"
+        android:icon="@drawable/statistic_selected"
+        app:showAsAction="ifRoom"
+        android:title="" />
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/setting_selected"
+        app:showAsAction="ifRoom"
+        android:title="" />
+
+
+</menu>

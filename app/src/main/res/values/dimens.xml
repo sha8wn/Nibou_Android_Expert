@@ -1,0 +1,25 @@
+<resources>
+    <!--text size-->
+    <dimen name="txt_12">12sp</dimen>
+    <dimen name="txt_14">14sp</dimen>
+    <dimen name="txt_16">16sp</dimen>
+    <dimen name="txt_18">18sp</dimen>
+    <dimen name="txt_24">24sp</dimen>
+    <dimen name="txt_25">25sp</dimen>
+
+    <!--dimensions-->
+    <dimen name="dim_0">0dp</dimen>
+    <dimen name="dim_1">1dp</dimen>
+    <dimen name="dim_5">5dp</dimen>
+    <dimen name="dim_10">10dp</dimen>
+    <dimen name="dim_15">15dp</dimen>
+    <dimen name="dim_20">20dp</dimen>
+    <dimen name="dim_30">30dp</dimen>
+    <dimen name="dim_40">40dp</dimen>
+    <dimen name="dim_60">60dp</dimen>
+    <dimen name="dim_100">100dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="dim_120">120dp</dimen>
+
+</resources>

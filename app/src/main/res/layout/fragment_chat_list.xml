@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:focusable="true"
+                  android:focusableInTouchMode="true"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_40"
+                android:layout_marginRight="@dimen/dim_20"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:text="@string/nibou_chat"
+                    android:textColor="@color/screen_title_color"
+                    android:textSize="@dimen/txt_25"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/grey_round_background"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_20">
+
+                <EditText
+                        android:id="@+id/search"
+                        android:paddingBottom="@dimen/dim_15"
+                        android:paddingTop="@dimen/dim_15"
+                        android:paddingLeft="@dimen/dim_10"
+                        android:paddingRight="8dp"
+                        android:textCursorDrawable="@null"
+                        android:gravity="center|start"
+                        android:layout_width="match_parent"
+                        android:inputType="text"
+                        android:imeOptions="actionSearch"
+                        android:layout_toLeftOf="@+id/icons"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/screen_title_color"
+                        android:textSize="@dimen/txt_14"
+                        android:textAlignment="viewStart"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:background="@drawable/grey_round_background"/>
+
+                <RelativeLayout
+                        android:id="@+id/icons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true">
+
+                    <ImageView
+                            android:id="@+id/search_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:src="@drawable/search_icon"
+                            android:visibility="visible"/>
+                    <ImageView
+                            android:id="@+id/cross_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:src="@drawable/cross_icon"
+                            android:visibility="gone"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/chat_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>
